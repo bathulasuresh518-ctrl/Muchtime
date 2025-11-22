@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="10" parallel="methods" name="Failed suite [NaukriSuite]">
+  <test thread-count="10" parallel="methods" name="NaukriTests(failed)">
+    <classes>
+      <class name="TestNGFramework.FirstTest">
+        <methods>
+          <include name="FirstTest"/>
+          <include name="FirstTest1"/>
+        </methods>
+      </class> <!-- TestNGFramework.FirstTest -->
+    </classes>
+  </test> <!-- NaukriTests(failed) -->
+</suite> <!-- Failed suite [NaukriSuite] -->
