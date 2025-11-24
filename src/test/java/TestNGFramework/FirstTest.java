@@ -46,7 +46,7 @@ public  class FirstTest {
 		driver.findElement(By.id("attachCV")).sendKeys(resume);
 		Thread.sleep(5000);
 		//driver.quit();
-		Thread.sleep(20000);
+		
 	   }
 	@DataProvider
 	public Object[][] getdata() {
