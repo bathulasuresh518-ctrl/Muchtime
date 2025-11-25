@@ -44,7 +44,7 @@ public  class FirstTest {
 		driver.findElement(By.className("view-profile-wrapper")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.id("attachCV")).sendKeys(resume);
-		Thread.sleep(8000);
+		Thread.sleep(7000);
 		//driver.quit();
 		
 	   }
@@ -53,10 +53,10 @@ public  class FirstTest {
 		Object [][] data=new Object [3][3];
 		data[0][0]="sureshvarsh34@gmail.com";
 		data[0][1]="Suresh@1998";
-		data[0][2]="C:\\Users\\Suresh Bathula\\eclipse-workspace\\artifact\\naukarifiles\\Suresh_Automation_Resume1.pdf";
+		data[0][2]="C:\\Users\\Suresh Bathula\\eclipse-workspace\\artifact\\naukarifiles\\Suresh_Automation_Resume2.pdf";
 		data[1][0]="bathulasuresh518@gmail.com";
 		data[1][1]="Suresh@1998";
-		data[1][2]="C:\\Users\\Suresh Bathula\\eclipse-workspace\\artifact\\naukarifiles\\Suresh_Automation_Resume2.pdf";
+		data[1][2]="C:\\Users\\Suresh Bathula\\eclipse-workspace\\artifact\\naukarifiles\\Suresh_Automation_Resume1.pdf";
 		data[2][0]="nareshbathula057@gmail.com";
 		data[2][1]="Naresh@2000";
 		data[2][2]="C:\\Users\\Suresh Bathula\\eclipse-workspace\\artifact\\naukarifiles\\Naresh_resume_resume.pdf";
