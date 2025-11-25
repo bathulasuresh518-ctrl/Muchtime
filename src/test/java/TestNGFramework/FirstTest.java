@@ -44,7 +44,7 @@ public  class FirstTest {
 		driver.findElement(By.className("view-profile-wrapper")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.id("attachCV")).sendKeys(resume);
-		Thread.sleep(5000);
+		Thread.sleep(8000);
 		//driver.quit();
 		
 	   }
