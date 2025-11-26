@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 //import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
@@ -18,8 +19,17 @@ public  class FirstTest {
 	WebDriver driver;
 	//@BeforeMethod
     public void setUp() {
+    	//added for checking
     	
-    	 driver = new ChromeDriver();
+    	ChromeOptions options = new ChromeOptions();
+    	options.addArguments("--headless"); // Run in headless mode
+    	options.addArguments("--no-sandbox"); // Required for CI
+    	options.addArguments("--disable-dev-shm-usage"); // Avoid /dev/shm issues
+    	options.addArguments("--disable-gpu"); // Optional for Linux
+    	 driver = new ChromeDriver(options);
+
+    	
+    	 //driver = new ChromeDriver();
 
      
        // driver = new ChromeDriver(options);

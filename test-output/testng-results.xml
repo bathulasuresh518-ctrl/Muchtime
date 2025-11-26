@@ -1,88 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-25T08:39:52 IST" name="Default suite" finished-at="2025-11-25T08:40:44 IST" duration-ms="51398">
+  <suite started-at="2025-11-25T09:39:20 IST" name="Default suite" finished-at="2025-11-25T09:39:31 IST" duration-ms="11319">
     <groups>
     </groups>
-    <test started-at="2025-11-25T08:39:52 IST" name="Default test" finished-at="2025-11-25T08:40:44 IST" duration-ms="51398">
-      <class name="TestNGFramework.FirstTest">
-        <test-method signature="FirstTest2(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestNGFramework.FirstTest@4afcd809]" started-at="2025-11-25T08:39:52 IST" name="FirstTest2" data-provider="getdata" finished-at="2025-11-25T08:40:13 IST" duration-ms="20373" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sureshvarsh34@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Suresh@1998]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[C:\Users\Suresh Bathula\eclipse-workspace\artifact\naukarifiles\Suresh_Automation_Resume1.pdf]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-11-25T09:39:20 IST" name="Default test" finished-at="2025-11-25T09:39:31 IST" duration-ms="11319">
+      <class name="TestNGFramework.growwInvest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestNGFramework.growwInvest@515c6049]" started-at="2025-11-25T09:39:20 IST" name="setUp" finished-at="2025-11-25T09:39:22 IST" duration-ms="2132" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- FirstTest2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNGFramework.FirstTest@4afcd809]" started-at="2025-11-25T08:40:13 IST" name="tearDown" finished-at="2025-11-25T08:40:13 IST" duration-ms="341" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="Grow()[pri:0, instance:TestNGFramework.growwInvest@515c6049]" started-at="2025-11-25T09:39:22 IST" name="Grow" finished-at="2025-11-25T09:39:31 IST" duration-ms="9139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Grow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNGFramework.growwInvest@515c6049]" started-at="2025-11-25T09:39:31 IST" name="tearDown" finished-at="2025-11-25T09:39:31 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="FirstTest2(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestNGFramework.FirstTest@4afcd809]" started-at="2025-11-25T08:40:13 IST" name="FirstTest2" data-provider="getdata" finished-at="2025-11-25T08:40:27 IST" duration-ms="14418" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[bathulasuresh518@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Suresh@1998]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[C:\Users\Suresh Bathula\eclipse-workspace\artifact\naukarifiles\Suresh_Automation_Resume2.pdf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FirstTest2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNGFramework.FirstTest@4afcd809]" started-at="2025-11-25T08:40:27 IST" name="tearDown" finished-at="2025-11-25T08:40:28 IST" duration-ms="281" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="FirstTest2(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestNGFramework.FirstTest@4afcd809]" started-at="2025-11-25T08:40:28 IST" name="FirstTest2" data-provider="getdata" finished-at="2025-11-25T08:40:43 IST" duration-ms="15686" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[nareshbathula057@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Naresh@2000]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[C:\Users\Suresh Bathula\eclipse-workspace\artifact\naukarifiles\Naresh_resume_resume.pdf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FirstTest2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNGFramework.FirstTest@4afcd809]" started-at="2025-11-25T08:40:43 IST" name="tearDown" finished-at="2025-11-25T08:40:44 IST" duration-ms="247" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- TestNGFramework.FirstTest -->
+      </class> <!-- TestNGFramework.growwInvest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

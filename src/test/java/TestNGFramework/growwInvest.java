@@ -26,9 +26,9 @@ public class growwInvest {
 		driver.findElement(By.id("login_password1")).sendKeys("Bakkamma@123@123");
 		driver.findElement(By.xpath("//*[text()='Submit']")).click();
 		Thread.sleep(5000);
-		for(int i=1;i<5;i++) {
-			driver.findElement(By.xpath("(//*[@class='otpinput88item'])"));
-		}
+//		for(int i=1;i<5;i++) {
+//			driver.findElement(By.xpath("(//*[@class='otpinput88item'])"));
+//		}
 	}
 
 	@AfterMethod
