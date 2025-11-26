@@ -44,6 +44,7 @@ public  class FirstTest {
 		//driver.findElement(By.xpath("//*[@class='crossIcon chatBot chatBot-ic-cross']")).click();
 		driver.findElement(By.className("view-profile-wrapper")).click();
 		Thread.sleep(2000);
+		System.out.println("Executing Naukri login script...");
 		driver.findElement(By.id("attachCV")).sendKeys(resume);
 		Thread.sleep(3000);
 		//driver.quit();
