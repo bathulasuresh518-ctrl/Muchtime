@@ -1,9 +1,9 @@
 name: Run Selenium TestNG Tests
 
 on:
-  workflow_dispatch:   # Manually run
+  workflow_dispatch:   # Manual run
   schedule:
-    - cron: "*/5 * * * *"   # Runs every 5 minutes (optional)
+    - cron: "*/5 * * * *"  # Runs every 5 minutes
 
 jobs:
   build:
@@ -19,8 +19,17 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Install Maven
-        uses: stCarolas/setup-maven@v4
+      - name: Cache Maven packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
 
-      - name: Run TestNG Tests
-        run: mvn test
+      - name: Install dependencies
+        run: mvn clean install -DskipTests
+
+      - name: Run TestNG tests
+        run: mvn test -Dsurefire.suiteXmlFiles=testng.xml
+
