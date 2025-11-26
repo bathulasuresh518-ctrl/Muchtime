@@ -45,6 +45,7 @@ public  class FirstTest {
 		driver.findElement(By.className("view-profile-wrapper")).click();
 		Thread.sleep(2000);
 		System.out.println("Executing Naukri login script...");
+		System.out.println("Login test started...");
 		driver.findElement(By.id("attachCV")).sendKeys(resume);
 		Thread.sleep(3000);
 		//driver.quit();
