@@ -19,17 +19,8 @@ public  class FirstTest {
 	WebDriver driver;
 	//@BeforeMethod
     public void setUp() {
-    	//added for checking
-    	
-    	ChromeOptions options = new ChromeOptions();
-    	options.addArguments("--headless"); // Run in headless mode
-    	options.addArguments("--no-sandbox"); // Required for CI
-    	options.addArguments("--disable-dev-shm-usage"); // Avoid /dev/shm issues
-    	options.addArguments("--disable-gpu"); // Optional for Linux
-    	 driver = new ChromeDriver(options);
 
-    	
-    	 //driver = new ChromeDriver();
+    	 driver = new ChromeDriver();
 
      
        // driver = new ChromeDriver(options);
@@ -54,7 +45,7 @@ public  class FirstTest {
 		driver.findElement(By.className("view-profile-wrapper")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.id("attachCV")).sendKeys(resume);
-		Thread.sleep(4000);
+		Thread.sleep(3000);
 		//driver.quit();
 		
 	   }
