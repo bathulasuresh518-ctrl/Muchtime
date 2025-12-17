@@ -28,32 +28,6 @@ public  class FirstTest {
         driver.manage().window().maximize();
        
     }
-    @Test
-    public void LinkedIn() throws InterruptedException {
-    	driver = new ChromeDriver();
-    	driver.get("https://www.linkedin.com/home");
-    	driver.manage().window().maximize();
-    	
-    	//Thread.sleep(1000000);
-    	driver.findElement(By.xpath("//*[contains(text(),'Member login') or contains(text(),'Welcome Back')]")).click();
-    	Thread.sleep(2000);
-    	//driver.findElement(By.className("nav__button-secondary btn-secondary-emphasis ml-3 btn-md")).click();
-    	driver.findElement(By.id("username")).sendKeys("sureshvarsh34@gmail.com");
-    	Thread.sleep(2000);
-    	driver.findElement(By.id("password")).sendKeys("Suresh@1998");
-    	Thread.sleep(2000);
-    	
-    	
-    	driver.findElement(By.xpath("//*[contains(text(),'Sign in')]")).click();
-    	Thread.sleep(2000);
-    	driver.findElement(By.className("profile-card-headline")).click();
-    	Thread.sleep(2000);
-    	driver.findElement(By.id("ember686")).click();
-    	Thread.sleep(2000);
-    	driver.findElement(By.xpath("(//*[@class='artdeco-button__text'])[3]")).click();
-    	//driver.findElement(By.xpath("(//*[text()='Enhance profile'])[2]")).click();
-    	
-    }
 	
 	@Test(dataProvider="getdata")
 	public void FirstTest2(String username, String password, String resume) throws InterruptedException {
