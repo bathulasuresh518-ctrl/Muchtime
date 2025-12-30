@@ -17,12 +17,21 @@ public  class FirstTest {
 	
 
 	WebDriver driver;
+	ChromeOptions options;
 	//@BeforeMethod
     public void setUp() {
+    	
+//putting extra for github actions
+    	
+    	 options = new ChromeOptions();
+    	options.addArguments("--headless=new");
+    	options.addArguments("--no-sandbox");
+    	options.addArguments("--disable-dev-shm-usage");
 
-    	 driver = new ChromeDriver();
+    	 driver = new ChromeDriver(options);
 
-     
+
+    	// driver = new ChromeDriver();
        // driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
@@ -76,6 +85,7 @@ public  class FirstTest {
         }
     }
 
+//.github/workflows/selenium-cloud.yml
 
 
 }
