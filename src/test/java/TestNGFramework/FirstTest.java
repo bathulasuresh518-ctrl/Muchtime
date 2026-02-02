@@ -4,8 +4,11 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 //import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
@@ -45,6 +48,7 @@ public  class FirstTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.naukri.com/");
 		driver.manage().window().maximize();
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(5));
 		driver.findElement(By.xpath("//*[text()='Login']")).click();
 		
 		driver.findElement(By.xpath("//*[@placeholder='Enter your active Email ID / Username']")).sendKeys(username);
@@ -52,11 +56,15 @@ public  class FirstTest {
 		driver.findElement(By.xpath("(//*[@type='submit'])[1]")).click();
 		//driver.findElement(By.xpath("//*[@class='crossIcon chatBot chatBot-ic-cross']")).click();
 		driver.findElement(By.className("view-profile-wrapper")).click();
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		System.out.println("Executing Naukri login script...");
 		System.out.println("Login test started...");
-		driver.findElement(By.id("attachCV")).sendKeys(resume);
-		Thread.sleep(3000);
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//*[@class='fileUpload waves-effect waves-light btn-large' and @id='attachCV']")).sendKeys(resume);
+		Thread.sleep(4000);
+		WebElement ele=driver.findElement(By.xpath("//*[text()='Success']"));
+		wait.until(ExpectedConditions.visibilityOf(ele));
+		Thread.sleep(4000);
 		//driver.quit();
 		
 	   }

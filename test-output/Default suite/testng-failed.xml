@@ -6,7 +6,7 @@
       <class name="TestNGFramework.FirstTest">
         <methods>
           <include name="tearDown"/>
-          <include name="LinkedIn"/>
+          <include name="FirstTest2" invocation-numbers="0"/>
         </methods>
       </class> <!-- TestNGFramework.FirstTest -->
     </classes>

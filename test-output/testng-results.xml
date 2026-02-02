@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-29T08:27:01 IST" name="Default suite" finished-at="2025-12-29T08:28:09 IST" duration-ms="67219">
+  <suite started-at="2026-02-02T13:38:49 IST" name="Default suite" finished-at="2026-02-02T13:41:53 IST" duration-ms="183892">
     <groups>
     </groups>
-    <test started-at="2025-12-29T08:27:01 IST" name="Default test" finished-at="2025-12-29T08:28:09 IST" duration-ms="67219">
+    <test started-at="2026-02-02T13:38:49 IST" name="Default test" finished-at="2026-02-02T13:41:53 IST" duration-ms="183892">
       <class name="TestNGFramework.FirstTest">
-        <test-method signature="FirstTest2(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestNGFramework.FirstTest@4afcd809]" started-at="2025-12-29T08:27:01 IST" name="FirstTest2" data-provider="getdata" finished-at="2025-12-29T08:27:21 IST" duration-ms="19294" status="PASS">
+        <test-method signature="FirstTest2(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestNGFramework.FirstTest@327514f]" started-at="2026-02-02T13:38:49 IST" name="FirstTest2" data-provider="getdata" finished-at="2026-02-02T13:39:44 IST" duration-ms="54873" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,11 +28,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FirstTest2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNGFramework.FirstTest@4afcd809]" started-at="2025-12-29T08:27:21 IST" name="tearDown" finished-at="2025-12-29T08:27:21 IST" duration-ms="638" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNGFramework.FirstTest@327514f]" started-at="2026-02-02T13:39:44 IST" name="tearDown" finished-at="2026-02-02T13:39:45 IST" duration-ms="249" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="FirstTest2(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestNGFramework.FirstTest@4afcd809]" started-at="2025-12-29T08:27:21 IST" name="FirstTest2" data-provider="getdata" finished-at="2025-12-29T08:27:43 IST" duration-ms="21319" status="PASS">
+        <test-method signature="FirstTest2(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestNGFramework.FirstTest@327514f]" started-at="2026-02-02T13:39:45 IST" name="FirstTest2" data-provider="getdata" finished-at="2026-02-02T13:40:54 IST" duration-ms="69145" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,11 +53,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FirstTest2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNGFramework.FirstTest@4afcd809]" started-at="2025-12-29T08:27:43 IST" name="tearDown" finished-at="2025-12-29T08:27:43 IST" duration-ms="704" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNGFramework.FirstTest@327514f]" started-at="2026-02-02T13:40:54 IST" name="tearDown" finished-at="2026-02-02T13:40:54 IST" duration-ms="266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="FirstTest2(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestNGFramework.FirstTest@4afcd809]" started-at="2025-12-29T08:27:43 IST" name="FirstTest2" data-provider="getdata" finished-at="2025-12-29T08:28:08 IST" duration-ms="24675" status="PASS">
+        <test-method signature="FirstTest2(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestNGFramework.FirstTest@327514f]" started-at="2026-02-02T13:40:54 IST" name="FirstTest2" data-provider="getdata" finished-at="2026-02-02T13:41:53 IST" duration-ms="59066" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,7 +78,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FirstTest2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNGFramework.FirstTest@4afcd809]" started-at="2025-12-29T08:28:08 IST" name="tearDown" finished-at="2025-12-29T08:28:09 IST" duration-ms="484" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNGFramework.FirstTest@327514f]" started-at="2026-02-02T13:41:53 IST" name="tearDown" finished-at="2026-02-02T13:41:53 IST" duration-ms="250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
